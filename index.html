@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東亞三國觀光浪潮：台灣、日本、韓國 2016-2025 年入境旅客消長深度解析</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Highcharts CDN -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white py-16 px-4 shadow-xl">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                <i class="fa-solid fa-chart-line mr-1.5"></i> 東亞觀光大數據專題報導
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                風雨與重生的十年：<br class="hidden sm:inline">台灣、日本、韓國觀光客流量消長解析（2016–2025）
+            </h1>
+            <p class="text-lg text-slate-300 max-w-3xl mx-auto font-light">
+                透過官方真實數據，完整透視東亞三大熱門旅遊目的地在歷經 2019 年巔峰、三年疫情急凍，到 2023–2025 年強勁反彈與突破歷史紀錄的關鍵轉折。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Chart Section Card -->
+        <section class="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 sm:p-8 transition hover:shadow-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-6 mb-6 border-b border-slate-100 gap-4">
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900 flex items-center">
+                        <i class="fa-solid fa-chart-area text-indigo-600 mr-2.5"></i> 2016–2025 年台、日、韓入境旅客總人次趨勢圖
+                    </h2>
+                    <p class="text-sm text-slate-500 mt-1">資料來源：交通部觀光署、日本觀光局（JNTO）、韓國觀光公社（KTO）官方統計數據</p>
+                </div>
+                <div class="flex items-center space-x-2 text-xs font-medium bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600 self-start sm:self-auto">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+                    <span>單位：人次 (Visitor Arrivals)</span>
+                </div>
+            </div>
+            
+            <!-- Highcharts Container -->
+            <div id="container" class="w-full h-[450px]">
